@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class Assessment1_JoyB {
 
     public static void main(String[] args) {
+
+//        Calling functions
         variableOperations();
         gradeCalculator();
         numberSequence();
         inputValidation();
         patternPrinting();
     }
-
+// Problem 1
     private static void variableOperations(){
         System.out.println("Problem 1: Variable Operations");
 //        Declare and initialize variables
@@ -38,6 +40,7 @@ public class Assessment1_JoyB {
         System.out.println("Remainder: " + remainder);
     }
 
+// Problem 2
     private static void gradeCalculator(){
         System.out.println("Problem 2: Grade Calculator");
         Scanner scanner = new Scanner(System.in);
@@ -69,7 +72,7 @@ public class Assessment1_JoyB {
 
         scanner.close();
     }
-
+// Problem 3
     private static void numberSequence(){
 
         System.out.println("Problem 3: NUMBER SEQUENCE");
@@ -92,7 +95,7 @@ public class Assessment1_JoyB {
             System.out.println();
         }
     }
-
+//Problem 4
     private static void inputValidation(){
         System.out.println("PROBLEM 4: INPUT VALIDATION");
 
@@ -127,7 +130,7 @@ public class Assessment1_JoyB {
         scanner.close();
 
     }
-
+// Problem 5
     private static void patternPrinting(){
 
         System.out.println("PROBLEM 5: PATTERN PRINTING");

@@ -1,5 +1,16 @@
 package io.github.machukajoy.calculator;
 
+/**
+ * Simple Console Calculator
+ * Student Name: Joy Buyanzi
+ * Date: 19/01/2026
+ * Features:
+ * - Basic arithmetic operations
+ * - Continuous operation
+ * - Error handling for division by zero
+ * - Input validation
+
+ */
 import java.util.Scanner;
 
 public class SimpleCalculator_JoyB {
@@ -38,10 +49,18 @@ public class SimpleCalculator_JoyB {
                 System.out.println("Result: " +(firstNo*secondNo));
                 break;
             case "/":
-                System.out.println("Result: " +(firstNo/secondNo));
+                if (secondNo == 0) {
+                    System.out.println("Error: Division by zero is not allowed.");
+                } else {
+                    System.out.println("Result: " + (firstNo / secondNo));
+                }
                 break;
             case"%":
-                System.out.println("Result: " +(firstNo%secondNo));
+                if (secondNo == 0) {
+                    System.out.println("Error: Modulus by zero is not allowed.");
+                } else {
+                    System.out.println("Result: " + (firstNo % secondNo));
+                }
                 break;
             default:
                 System.out.println("Enter correct input");
