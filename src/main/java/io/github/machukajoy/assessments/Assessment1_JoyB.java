@@ -1,4 +1,4 @@
-package io.github.machukajoy.week1assessment;
+package io.github.machukajoy.assessments;
 
 import java.util.Scanner;
 
