@@ -24,6 +24,7 @@ public class CheckingAccount extends BankAccount {
 
     @Override
     public String toString() {
+
         return super.toString() + ", Overdraft Limit: $" + overdraftLimit;
     }
 }

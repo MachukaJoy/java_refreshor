@@ -26,5 +26,10 @@ public class SavingsAccount extends BankAccount {
         }
         super.withdraw(amount);
     }
+
+//    @Override
+//    public void applyInterest() {
+//        balance += balance * interestRate;
+//    }
 }
 

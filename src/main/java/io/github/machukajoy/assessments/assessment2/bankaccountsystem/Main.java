@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Bank bank = new Bank();
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.println("\n=== Bank Account System ===");
@@ -19,18 +19,18 @@ public class Main {
             System.out.println("8. Exit");
             System.out.print("Choose option: ");
 
-            int choice = sc.nextInt();
+            int choice = scanner.nextInt();
 
             switch (choice) {
                 case 1:
                     System.out.print("Account Number: ");
-                    String sAccNo = sc.next();
+                    String sAccNo = scanner.next();
                     System.out.print("Holder Name: ");
-                    String sName = sc.next();
+                    String sName = scanner.next();
                     System.out.print("Initial Balance: ");
-                    double sBal = sc.nextDouble();
+                    double sBal = scanner.nextDouble();
                     System.out.print("Interest Rate: ");
-                    double rate = sc.nextDouble();
+                    double rate = scanner.nextDouble();
 
                     bank.addAccount(
                             new SavingsAccount(sAccNo, sName, sBal, rate)
@@ -40,13 +40,13 @@ public class Main {
 
                 case 2:
                     System.out.print("Account Number: ");
-                    String cAccNo = sc.next();
+                    String cAccNo = scanner.next();
                     System.out.print("Holder Name: ");
-                    String cName = sc.next();
+                    String cName = scanner.next();
                     System.out.print("Initial Balance: ");
-                    double cBal = sc.nextDouble();
+                    double cBal = scanner.nextDouble();
                     System.out.print("Overdraft Limit: ");
-                    double limit = sc.nextDouble();
+                    double limit = scanner.nextDouble();
 
                     bank.addAccount(
                             new CheckingAccount(cAccNo, cName, cBal, limit)
@@ -56,9 +56,9 @@ public class Main {
 
                 case 3:
                     System.out.print("Account Number: ");
-                    String dAccNo = sc.next();
+                    String dAccNo = scanner.next();
                     System.out.print("Amount: ");
-                    double dAmt = sc.nextDouble();
+                    double dAmt = scanner.nextDouble();
 
                     BankAccount dAcc = bank.findAccount(dAccNo);
                     if (dAcc != null) {
@@ -68,9 +68,9 @@ public class Main {
 
                 case 4:
                     System.out.print("Account Number: ");
-                    String wAccNo = sc.next();
+                    String wAccNo = scanner.next();
                     System.out.print("Amount: ");
-                    double wAmt = sc.nextDouble();
+                    double wAmt = scanner.nextDouble();
 
                     BankAccount wAcc = bank.findAccount(wAccNo);
                     if (wAcc != null) {
@@ -80,7 +80,7 @@ public class Main {
 
                 case 5:
                     System.out.print("Account Number: ");
-                    String bAccNo = sc.next();
+                    String bAccNo = scanner.next();
 
                     BankAccount bAcc = bank.findAccount(bAccNo);
                     if (bAcc != null) {
@@ -99,7 +99,7 @@ public class Main {
 
                 case 8:
                     System.out.println("Goodbye!");
-                    sc.close();
+                    scanner.close();
                     System.exit(0);
                     break;
 

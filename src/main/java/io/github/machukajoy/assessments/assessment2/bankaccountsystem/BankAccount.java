@@ -47,11 +47,13 @@ public class BankAccount {
         balance -= amount;
     }
 
+    public void applyInterest() {
+
+    }
+
     @Override
     public String toString() {
-        return "Account Number: " + accountNumber +
-                ", Holder: " + accountHolder +
-                ", Balance: $" + balance;
+        return "Account Number: " + accountNumber + ", Holder: " + accountHolder + ", Balance: $" + balance;
     }
 }
 

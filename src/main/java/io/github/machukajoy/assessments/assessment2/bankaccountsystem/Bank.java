@@ -39,10 +39,10 @@ public class Bank {
 
     public void applyInterestToSavingsAccounts() {
         for (BankAccount acc : accounts) {
-            if (acc instanceof SavingsAccount) {
-                ((SavingsAccount) acc).applyInterest();
-            }
+            acc.applyInterest(); // runtime decides
         }
     }
+
+
 }
 
