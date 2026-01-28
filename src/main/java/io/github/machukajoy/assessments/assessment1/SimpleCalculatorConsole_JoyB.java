@@ -1,4 +1,4 @@
-package io.github.machukajoy.assessments;
+package io.github.machukajoy.assessments.assessment1;
 
 /**
  * Simple Console Calculator
@@ -9,8 +9,8 @@ package io.github.machukajoy.assessments;
  * - Continuous operation
  * - Error handling for division by zero
  * - Input validation
-
  */
+
 import java.util.Scanner;
 
 public class SimpleCalculatorConsole_JoyB {
@@ -38,15 +38,15 @@ public class SimpleCalculatorConsole_JoyB {
         double secondNo = scanner.nextDouble();
 
 
-        switch (operator){
+        switch (operator) {
             case "+":
-                System.out.println("Result: " +(firstNo+secondNo));
+                System.out.println("Result: " + (firstNo + secondNo));
                 break;
             case "-":
-                System.out.println("Result: " +(firstNo-secondNo));
+                System.out.println("Result: " + (firstNo - secondNo));
                 break;
             case "*":
-                System.out.println("Result: " +(firstNo*secondNo));
+                System.out.println("Result: " + (firstNo * secondNo));
                 break;
             case "/":
                 if (secondNo == 0) {
@@ -55,7 +55,7 @@ public class SimpleCalculatorConsole_JoyB {
                     System.out.println("Result: " + (firstNo / secondNo));
                 }
                 break;
-            case"%":
+            case "%":
                 if (secondNo == 0) {
                     System.out.println("Error: Modulus by zero is not allowed.");
                 } else {

@@ -1,4 +1,4 @@
-package io.github.machukajoy.assessments;
+package io.github.machukajoy.assessments.assessment1;
 
 import java.util.Scanner;
 
@@ -13,8 +13,9 @@ public class Assessment1_JoyB {
         inputValidation();
         patternPrinting();
     }
-// Problem 1
-    private static void variableOperations(){
+
+    // Problem 1
+    private static void variableOperations() {
         System.out.println("Problem 1: Variable Operations");
 //        Declare and initialize variables
         int a = 15;
@@ -40,8 +41,8 @@ public class Assessment1_JoyB {
         System.out.println("Remainder: " + remainder);
     }
 
-// Problem 2
-    private static void gradeCalculator(){
+    // Problem 2
+    private static void gradeCalculator() {
         System.out.println("Problem 2: Grade Calculator");
         Scanner scanner = new Scanner(System.in);
 
@@ -56,24 +57,21 @@ public class Assessment1_JoyB {
         // Determine grade using if-else
         else if (score >= 90) {
             System.out.println("Grade: A");
-        }
-        else if (score >= 80) {
+        } else if (score >= 80) {
             System.out.println("Grade: B");
-        }
-        else if (score >= 70) {
+        } else if (score >= 70) {
             System.out.println("Grade: C");
-        }
-        else if (score >= 60) {
+        } else if (score >= 60) {
             System.out.println("Grade: D");
-        }
-        else {
+        } else {
             System.out.println("Grade: F");
         }
 
         scanner.close();
     }
-// Problem 3
-    private static void numberSequence(){
+
+    // Problem 3
+    private static void numberSequence() {
 
         System.out.println("Problem 3: NUMBER SEQUENCE");
         // Loop from 1 to 20
@@ -95,8 +93,9 @@ public class Assessment1_JoyB {
             System.out.println();
         }
     }
-//Problem 4
-    private static void inputValidation(){
+
+    //Problem 4
+    private static void inputValidation() {
         System.out.println("PROBLEM 4: INPUT VALIDATION");
 
         Scanner scanner = new Scanner(System.in);
@@ -130,12 +129,13 @@ public class Assessment1_JoyB {
         scanner.close();
 
     }
-// Problem 5
-    private static void patternPrinting(){
+
+    // Problem 5
+    private static void patternPrinting() {
 
         System.out.println("PROBLEM 5: PATTERN PRINTING");
-        for (int i=1; i<=5; i++){
-            for(int j=1; j<=i; j++){
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println();
