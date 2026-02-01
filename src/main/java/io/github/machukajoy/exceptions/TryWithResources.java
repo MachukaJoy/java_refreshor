@@ -4,26 +4,27 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class TryWithResources {
     public static void main(String[] args) {
-// Old way - manual resource management
-        BufferedReader reader = null;
-        oldWay();
+
+        Scanner sc = new Scanner(System.in);
+        newWay();
     }
 
     private static void newWay() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("test.txt"))) {
 
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        try (RandomInput randomInput = new RandomInput()) {
+            System.out.println("Processing data");
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
     }
 
     private static void oldWay() {
+        // Old way - manual resource management
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader("test.txt"));
