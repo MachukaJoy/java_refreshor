@@ -1,0 +1,18 @@
+
+1. Encapsulation violations
+Company name cannot be public
+Add a set and get method for companyName and employeeName method
+
+2. Static context misuse
+Use static setCompanyName() and getCompanyName() methods.
+
+3. Constructor problems
+The constructor only initialized employeeName
+Initialize all required fields in the constructor and add exception handling for validation
+
+4. Method return type issues
+The calculateBonus() method was declared void but returned a value.
+Change return type to double
+
+5. Missing exception handling
+Throw IllegalArgumentException to enforce valid data in salary values and empty employee name
