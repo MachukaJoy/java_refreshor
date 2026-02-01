@@ -16,7 +16,7 @@ public class Loops {
 //        breakingStatement();
 //        continueStatement();
         nestedForLoops();
-
+//        System.out.println("John"+ int(1)+2);
     }
 
     static void nestedForLoops() {
